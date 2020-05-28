@@ -54,7 +54,6 @@ $(document).ready(function() {
         triggerElement: slides[i]
       })
       .setPin(slides[i], {pushFollowers: false})
-      .addIndicators()
       .addTo(controller);
   }
 
@@ -63,19 +62,19 @@ $(document).ready(function() {
     triggerHook: 0,
     duration: "10%"
   })
-  .setPin('.panel-team')
+  .setPin('.panel-team', {pushFollowers: false})
   .addTo(controller);
 
-  $(document).mousemove(function(e) {
-    $('.cursor').eq(0).css({
-      left: e.clientX,
-      top: e.clientY
-    });
-    $('.cursor').eq(1).css({
-      left: e.clientX,
-      top: e.clientY
-    });
-  });
+  // $(document).mousemove(function(e) {
+  //   $('.cursor').eq(0).css({
+  //     left: e.clientX,
+  //     top: e.clientY
+  //   });
+  //   $('.cursor').eq(1).css({
+  //     left: e.clientX,
+  //     top: e.clientY
+  //   });
+  // });
 });
 
 const time = 4000;

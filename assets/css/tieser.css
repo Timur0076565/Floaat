@@ -76,3 +76,40 @@
         background-size: contain;
     }
 }
+@media (max-width: 1000px) {
+    .tieser__descr h1 {
+        font-size: 100px;
+    }
+}
+@media (max-width: 780px) {
+    .tieser__descr h1 {
+        font-size: 70px;
+    }
+    .tieser__descr h1::after {
+        top: 68px;
+        width: 40vw;
+        height: 15vw;
+    }
+}
+@media (max-width: 680px) {
+    .tieser__descr h1::after {
+        top: 68px;
+        width: 65vw;
+        height: 20vw;
+    }
+}
+@media (max-width: 500px) {
+    .tieser__descr h1 {
+        font-size: 55px;
+    }
+    .tieser__descr h1::after {
+        top: 74px;
+        width: 60vw;
+        height: 20vw;    
+    }
+}
+@media (max-width: 380px) {
+    .tieser__descr h1 {
+        font-size: 45px;
+    }
+}
