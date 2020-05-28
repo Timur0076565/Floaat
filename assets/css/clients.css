@@ -59,12 +59,52 @@
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    position: relative;
 }
-.clients__img:hover{
-    background-color: #C4021A;
+.clients__img:hover .clients__img-hover{
+    display: flex;
 }
-.clients__img:hover img {
+.clients__img:hover > img {
     z-index: -1;
+}
+.clients__img-hover {
+    position: absolute;
+    width: 196px;
+    height: 100%;
+    border-radius: 5px;
+    background-color: #C4021A;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.clients__img-hover p, 
+.clients__img-hover__title{
+    font-family: 'Archivo Black';
+    letter-spacing: 0.428571px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+}
+.clients__img-hover p {
+    font-size: 12px;
+}
+.clients__img-hover__title{
+    font-size: 20px;
+    padding: 30px 0;
+}
+.clients__img-hover__link {
+    display: flex;
+    align-items: center;
+}
+.clients__img-hover__link a {
+    font-size: 12px;
+    line-height: 13px;
+    color: #FFFFFF;
+    padding: 0 5px 0 0; 
+}
+.clients__img-hover__link > img {
+    z-index: 1;
 }
 .clients__img-height {
     height: 244px;

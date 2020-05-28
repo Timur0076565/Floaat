@@ -11,6 +11,8 @@ $(document).ready(function() {
 
   $('.team-slider').slick({
     arrows: true,
+    prevArrow: $('.team__prev'),
+    nextArrow: $('.team__next'),
     dots: false,
     slidesToShow: 4,
     speed: 1000,

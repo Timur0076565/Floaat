@@ -21,11 +21,40 @@
     border-radius: 10px;
     padding: 0 8px;
     outline: none;
+    cursor: pointer;
 }
 .slide__item img{
     border-radius: 10px;
+   position: relative;
 }
-
+.slide__hover {
+    background-color: #D2132A;
+    z-index: 10;
+    position: absolute;
+    width: 200px;
+    height: 300px;
+    width: 262px;
+    height: 99%;
+    border-radius: 10px;
+    opacity: .9;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.slide__item:hover .slide__hover {
+    display: flex;
+}
+.slide__hover p {
+    font-size: 12px;
+    color: #FFFFFF;
+}
+.slide__hover-name {
+    font-family: 'Archivo Black';
+    letter-spacing: 0.428571px;
+    text-transform: uppercase;
+    padding: 0 0 10px 0px;
+}
 .slick-slider {
     width: 100%;
     -webkit-transition: .3s ease all;
@@ -44,9 +73,10 @@
 
 .slick-arrow{
     position: absolute;
-    top: 50%;
+    top: 55%;
     display: flex;
     align-items: center;
+    justify-content: center;
     background: none;
     border: none;
     font-weight: bold;
@@ -54,15 +84,24 @@
     line-height: 13px;
     text-transform: uppercase;
     color: #161415;
-    /* font-size: 0; */
     outline: none;
+    width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    cursor: pointer;
 }
-.slick-prev {
+.team__prev {
     left: 0;
+    z-index: 5;
 }
-.slick-next {
+.team__next {
     right: 0;
+    z-index: 5;
 }    
+.slick-arrow:hover {
+    background: #D2132A;
+    color: #fff;
+}
 
 .panel-team {
     position: relative;
