@@ -40,31 +40,42 @@ $(document).ready(function() {
     ]
   });
 
-  // var controller = new ScrollMagic.Controller({
-  //   globalSceneOptions: {
-  //     triggerHook: 'onLeave',
-  //     duration: "100%" 
-  //   }
-  // });
+  var controller = new ScrollMagic.Controller({
+    globalSceneOptions: {
+      triggerHook: 'onLeave',
+      duration: "100%" 
+    }
+  });
 
-  // var slides = document.querySelectorAll(".panel");
+  var slides = document.querySelectorAll(".panel");
 
-  // for (var i=0; i<slides.length; i++) {
-  //   new ScrollMagic.Scene({
-  //       triggerElement: slides[i]
-  //     })
-  //     .setPin(slides[i], {pushFollowers: false})
-  //     .addIndicators()
-  //     .addTo(controller);
-  // }
+  for (var i=0; i<slides.length; i++) {
+    new ScrollMagic.Scene({
+        triggerElement: slides[i]
+      })
+      .setPin(slides[i], {pushFollowers: false})
+      .addIndicators()
+      .addTo(controller);
+  }
 
-  // var pinIntroScene =  new ScrollMagic.Scene({
-  //   triggerElement: '.panel-team',
-  //   triggerHook: 0,
-  //   duration: "10%"
-  // })
-  // .setPin('.panel-team')
-  // .addTo(controller);
+  var pinIntroScene =  new ScrollMagic.Scene({
+    triggerElement: '.panel-team',
+    triggerHook: 0,
+    duration: "10%"
+  })
+  .setPin('.panel-team')
+  .addTo(controller);
+
+  $(document).mousemove(function(e) {
+    $('.cursor').eq(0).css({
+      left: e.clientX,
+      top: e.clientY
+    });
+    $('.cursor').eq(1).css({
+      left: e.clientX,
+      top: e.clientY
+    });
+  });
 });
 
 const time = 4000;

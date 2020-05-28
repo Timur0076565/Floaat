@@ -41,6 +41,7 @@
 }
 .clients__items {
     padding: 8% 4.7% 0;
+    position: relative;
 }
 .clients__items:last-child{
     padding: 0;
@@ -73,4 +74,19 @@
 }
 .clients__name{
     padding: 10px 0 0 0;
+}
+.clients__img-content {
+    position: absolute;
+}
+.clients__torus-clients {
+    top: -52px;
+    right: 80px;
+}
+.clients__sphere-clients {
+    bottom: 74px;
+    right: 136px;
+}
+.clients__youtube {
+    top: 320px;
+    left: 102px;
 }

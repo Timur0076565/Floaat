@@ -39,10 +39,11 @@
     background-color: #C4021A;
 }
 .we-do__tab img:hover {
-    filter: sepia(100%);
+    
 }
 .we-do__tabs-items{
     padding: 0 0 0 5%;
+    position: relative;
 } 
 .we-do__tab-item {
     width: 421px;
@@ -89,5 +90,22 @@
 }
 .current {
     display: flex;
-    filter: sepia(100%);
+}
+.current.we-do__tab{
+    background-color: #C4021A;
+}
+.we-do__img {
+    position: absolute;
+}
+.we-do__heart22 {
+    top: 326px;
+    left: 25px;
+}
+.we-do__shape {
+    top: 0px;
+    left: 10px;
+}
+.we-do__shape2 {
+    top: 41px;
+    left: 518px;
 }

@@ -1,6 +1,7 @@
 .team {
     background-color: #FFECEE;
     padding: 0 0 6%;
+    position: relative;
 }
 .team-content h2{
     font-size: 40px;
@@ -62,3 +63,20 @@
 .slick-next {
     right: 0;
 }    
+
+.panel-team {
+    position: relative;
+}
+
+.team__img {
+    position: absolute;
+    z-index: 1;
+}
+.team__note_team {
+    top: 57px;
+    right: 256px;
+}
+.team__spher_team {
+    top: 432px;
+    left: 51px;
+}
