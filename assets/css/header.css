@@ -1,0 +1,67 @@
+.header {
+    background: radial-gradient(48.18% 24.84% at 50% 50%, #2A0227 0%, #170119 100%);
+    position: relative;
+}
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 0px;
+    align-items: center;
+}
+.header__text {
+    display: flex;
+    align-content: center;
+}
+.header__text a {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase; 
+    color: #FFEFF6;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+.header__text .header__link-black {
+    color: #161415;
+    margin: 0 22px 0 0;
+}
+.header__img {
+    position: absolute;
+}
+.header__hlopushka {
+    bottom: 284px;
+    right: 75px;
+}
+.header__headphone {
+    left: 165px;
+    top: 107px;
+}
+.header__torus {
+    bottom: 181px;
+    right: 56px;
+}
+.header__youtube3 {
+    top: 24px;
+    right: 171px;
+}
+.header__torus3 {
+    top: 104px;
+    left: 683px;
+}
+.header__note2 {
+    bottom: 144px;
+    left: 299px;
+
+}
+.header__heart22 {
+
+}
+.header__shape {
+
+}
+.header__shape2 {
+
+}
+
+

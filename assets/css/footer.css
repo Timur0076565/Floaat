@@ -1,0 +1,43 @@
+.footer {
+    background: #170119;
+    padding: 0 0 .4%;
+}
+.footer__contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4% 0 4%;
+    /* background-color: #D2132A; */
+}
+.footer__contact h3, 
+.footer__copy,
+.footer__logo p {
+    color: #FFFFFF;
+}
+.footer__contact h3{
+    font-weight: bold;
+    font-size: 32px;
+    letter-spacing: 1px;
+    padding: 0 15px 0 0;
+}
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.2% 0 0;
+}
+.footer__copy {
+    font-size: 14px;
+    mix-blend-mode: normal;
+    opacity: 0.98;
+}
+.footer__logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer__logo p{
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    padding: 0 0 0 14px;
+}

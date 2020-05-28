@@ -1,0 +1,85 @@
+$(document).ready(function() {
+  
+  function tabs() {
+    $('.we-do__tabs-nav .we-do__tab').on('click', function() {
+      var id = $(this).attr('data-id');
+      $(this).closest('.we-do__tabs').find('[data-id^="tab-"]').removeClass('current');
+      $(this).closest('.we-do__tabs').find('[data-id="' + id + '"]').addClass('current');
+    });
+  }
+  tabs();
+
+  $('.team-slider').slick({
+    arrows: true,
+    dots: false,
+    slidesToShow: 4,
+    speed: 1000,
+    infinite: true,
+    initialSlide: 0,
+    draggable: false,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1210,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+        }
+      },
+    ]
+  });
+
+  // var controller = new ScrollMagic.Controller({
+  //   globalSceneOptions: {
+  //     triggerHook: 'onLeave',
+  //     duration: "100%" 
+  //   }
+  // });
+
+  // var slides = document.querySelectorAll(".panel");
+
+  // for (var i=0; i<slides.length; i++) {
+  //   new ScrollMagic.Scene({
+  //       triggerElement: slides[i]
+  //     })
+  //     .setPin(slides[i], {pushFollowers: false})
+  //     .addIndicators()
+  //     .addTo(controller);
+  // }
+
+  // var pinIntroScene =  new ScrollMagic.Scene({
+  //   triggerElement: '.panel-team',
+  //   triggerHook: 0,
+  //   duration: "10%"
+  // })
+  // .setPin('.panel-team')
+  // .addTo(controller);
+});
+
+const time = 4000;
+const step = 1;
+
+function outNumber(num, elem) {
+  let counterNum = document.querySelector('.tieser__counter-numbers');
+  n = 1000;
+  let t = Math.round(time/(num/step));
+  let interval = setInterval(() => {
+    n = n + step;
+    if (n == num) {
+      clearInterval(interval)
+    }
+    counterNum.innerHTML = n;
+  }, t);
+}
+outNumber(2 +'.'+ 000 +'.'+ 030 +'.'+021, '.tieser__counter-numbers')

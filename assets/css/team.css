@@ -1,0 +1,64 @@
+.team {
+    background-color: #FFECEE;
+    padding: 0 0 6%;
+}
+.team-content h2{
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;  
+    color: #383030;
+}
+.team-slider {
+    display: flex;
+    padding: 45px 0 0;
+    justify-content: center;
+    position: relative;
+}
+.slide__item {
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 0 8px;
+    outline: none;
+}
+.slide__item img{
+    border-radius: 10px;
+}
+
+.slick-slider {
+    width: 100%;
+    -webkit-transition: .3s ease all;
+    -moz-transition: .3s ease all;
+    transition: .3s ease all;
+}
+.slick-list {
+    overflow: hidden;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.slick-track {
+    display: flex;
+}
+
+.slick-arrow{
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #161415;
+    /* font-size: 0; */
+    outline: none;
+}
+.slick-prev {
+    left: 0;
+}
+.slick-next {
+    right: 0;
+}    

@@ -1,0 +1,93 @@
+.we-do {
+    background: radial-gradient(48.18% 24.84% at 50% 50%, #2A0227 0%, #170119 100%);
+    padding: .5% 0;
+}
+.we-do__content{
+    padding: 8.3% 0 10.6%;
+}
+.we-do__content h2{
+    font-size: 40px;
+    line-height: 40px;
+    color: #FFFFFF;
+}
+.we-do__tabs {
+    display: flex;
+    align-items: center;
+}
+.we-do__tabs-nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 3% 0 0;
+}
+.we-do__tab{
+    background: rgba(100, 60, 90, 0.2);
+    border-radius: 12px;
+    width: 173px;
+    height: 173px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3.5px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.we-do__tab {
+    padding: 20px 20px 0 0;
+}
+.we-do__tab:hover {
+    background-color: #C4021A;
+}
+.we-do__tab img:hover {
+    filter: sepia(100%);
+}
+.we-do__tabs-items{
+    padding: 0 0 0 5%;
+} 
+.we-do__tab-item {
+    width: 421px;
+    height: 421px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+.tab-item-1 {
+    background-image: url('../img/settings_big.png')
+}
+.tab-item-2 {
+    background-image: url('../img/star_big.png')
+}
+.tab-item-3 {
+    background-image: url('../img/graphik_big.png')
+}
+.tab-item-4 {
+    background-image: url('../img/Lupa_big.png')
+}
+.tab-item-5 {
+    background-image: url('../img/hlopushka_big.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+.tab-item-6 {
+    background-image: url('../img/headphone_big.png')
+}
+.we-do__tab-text {
+    text-align: center;
+}
+.we-do__tab-text h3{
+    font-weight: bold;
+    font-size: 36px;
+    color: #FFFFFF;
+    margin: 20px 0;
+}
+.we-do__tab-text a{
+    font-size: 12px;
+    letter-spacing: 0.428571px;
+    text-transform: uppercase;
+    color: #D2132A;
+}
+.current {
+    display: flex;
+    filter: sepia(100%);
+}

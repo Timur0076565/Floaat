@@ -1,0 +1,78 @@
+.tieser,
+.tieser__descr,
+.tieser__counter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tieser__descr{
+    -webkit-transition: .3s ease all;
+    -moz-transition: .3s ease all; 
+    transition: .3s ease all;
+    padding: 12% 0 17px;
+}
+.tieser{
+    padding: 0 0 10%;
+}
+.tieser__descr p{
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 13px;
+    text-transform: uppercase;
+    color: #F9A608;
+    padding: 9px 0 0;
+}
+.tieser__descr h1 {
+    font-weight: normal;
+    font-size: 170px;
+    line-height: 168px;
+    text-transform: uppercase;
+    color: #FFEFF6;
+    position: relative;
+    transform: rotate3d(0, 0, 0, 0deg);
+}
+.tieser__descr h1::after {
+    content: '';
+    position: absolute;
+    top: 28px;
+    left: 52%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: 100vw;
+    background-image:url('../img/lettering.png');
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+.tieser__counter {
+    padding: 17.5% 0 0 18px;
+}
+.tieser__counter-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;   
+    color: #643C5A;
+}
+.tieser__counter-numbers{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 33px; 
+    text-transform: uppercase;  
+    color: #F6F6F6;
+    padding: 10px 0;
+}
+.tieser__counter-subtext {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #F6F6F6;
+}
+
+@media (max-width: 1200px) {
+    .tieser__descr h1::after {
+        top: 28px;
+        width: 60vw;
+        height: 25vw;
+        background-size: contain;
+    }
+}
