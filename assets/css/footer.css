@@ -71,8 +71,8 @@
 }
 .footer__torus {
     top: -79px;
-    z-index: 1;
     right: 20px;
+    z-index: 1;
 }
 
 @media (max-width: 880px) {
