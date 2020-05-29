@@ -138,10 +138,10 @@
     }
 }
 @media (max-width: 780px) {
-    .we-do__tab {
+    .we-do__tab, 
+    .we-do__tab__hover {
         width: 85px;
         height: 85px;
-        padding: 10px 10px 0 0;
     }
     .we-do__tabs-nav {
         width: 280px;
