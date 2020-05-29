@@ -196,3 +196,28 @@
     75%{transform: translateX(5px) translateY(0px); }   
     100%{transform: translateX(5px) translateY(20px); }
 }
+
+@media (max-width: 1000px) {
+    .header__img img{
+        width: 50%;
+    }
+}
+@media (max-width: 780px) {
+    .header__youtube3 {
+        top: 50px;
+        right: 0;
+    }
+    .header__headphone {
+        left: 10px;
+        top: 108px;
+    }
+    .header__hlopushka {
+        bottom: 190px;
+        right: 84px;
+    }
+}
+@media (max-width: 550px) {
+    .header__img img{
+        display: none;
+    }
+}

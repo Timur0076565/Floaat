@@ -19,16 +19,16 @@ $(document).ready(function() {
     infinite: true,
     initialSlide: 0,
     draggable: false,
-    variableWidth: true,
+    // variableWidth: true,
     responsive: [
       {
-        breakpoint: 1210,
+        breakpoint: 1294,
         settings: {
           slidesToShow: 3,
         },
       },
       {
-        breakpoint: 900,
+        breakpoint: 1000,
         settings: {
           slidesToShow: 2,
         },
@@ -37,6 +37,7 @@ $(document).ready(function() {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
+          arrows: false,
         }
       },
     ]

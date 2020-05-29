@@ -117,6 +117,7 @@
 }
 .clients__img-content {
     position: absolute;
+    z-index: 1;
 }
 .clients__torus-clients {
     top: -52px;
@@ -129,4 +130,40 @@
 .clients__youtube {
     top: 320px;
     left: 102px;
+}
+
+@media (max-width: 1200px) {
+    .clients__descr {
+        padding: 70px 5.5% 0 0;
+    }
+    .clients__container {
+        margin-top: 1%;
+    }
+}
+@media (max-width: 1000px) {
+    .clients__container {
+        justify-content: center;
+    }
+    .clients__content {
+        padding: 5% 0 0 0;
+    }
+    .clients__descr {
+        text-align: center;
+        padding: 70px 0 0 0;
+    }
+}
+@media (max-width: 780px) {
+    .clients__img, 
+    .clients__img-hover,
+    .clients__img img {
+        width: 100%;
+    }
+    .clients__img-height img {
+        width: 40%;
+        padding: 15px 0;
+    }
+    .clients__img-height {
+        height: auto;
+    }
+
 }

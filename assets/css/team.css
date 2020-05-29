@@ -15,6 +15,7 @@
     padding: 45px 0 0;
     justify-content: center;
     position: relative;
+
 }
 .slide__item {
     overflow: hidden;
@@ -22,6 +23,8 @@
     padding: 0 8px;
     outline: none;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
 }
 .slide__item img{
     border-radius: 10px;
@@ -31,10 +34,8 @@
     background-color: #D2132A;
     z-index: 10;
     position: absolute;
-    width: 200px;
-    height: 300px;
     width: 262px;
-    height: 99%;
+    height: 100%;
     border-radius: 10px;
     opacity: .9;
     display: none;
@@ -118,4 +119,13 @@
 .team__spher_team {
     top: 432px;
     left: 51px;
+}
+
+
+@media (max-width: 640px) {
+    .team__img img,
+    .team__prev,
+    .team__next {
+       display: none;
+    }
 }
